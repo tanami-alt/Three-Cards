@@ -1,0 +1,95 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --White-parrafos: hsla(0, 0%, 100%, 0.75);
+    --Gray-everything-else: hsl(0, 0%, 95%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+html {
+    display: flex;
+    font-size: 62.5%;
+    background-color: var(--Gray-everything-else);
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+main {
+    display: flex;
+    max-width: 920px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+main div {
+   height: 450px;
+}
+main img {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+main h1 {
+    color: var(--Gray-everything-else);
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin: 20px;
+    margin-left: 40px;
+}
+main p {
+    color: var(--White-parrafos);
+    font-size: 1.5rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 2rem;
+    margin-bottom: 90px;
+}
+main .button{
+    background-color: var(--Gray-everything-else);
+    border: 2px solid var(--Gray-everything-else);
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.5rem ;
+    margin: 40px;
+}
+main .sedans {
+    background-color: var(--Bright-orange);
+}
+main .sedans .button {
+    color: var(--Bright-orange);
+}
+main .sedans .button:hover {
+    background-color: var(--Bright-orange);
+    color: var(--Gray-everything-else);
+}
+main .suvs {
+    background-color: var(--Dark-cyan);
+} main .suvs .button {
+    color: var(--Dark-cyan);
+}
+main .suvs .button:hover {
+    background-color: var(--Dark-cyan);
+    color: var(--Gray-everything-else);
+}
+main .luxury {
+    background-color: var(--Very-dark-cyan);
+}
+main .luxury .button {
+    color: var(--Very-dark-cyan);
+}
+main .luxury .button:hover {
+    background-color: var(--Very-dark-cyan);
+    color: var(--Gray-everything-else);
+}
+@media (max-width: 768px){
+    main {
+        flex-direction: column;
+    }
+    main div {
+        padding: 40px;
+    }
+}
